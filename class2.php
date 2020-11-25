@@ -52,6 +52,7 @@ $man = new User('Vasya ', '18 ');
 $man->setAge(25);
 $man->setName('Петя');
 
+
 echo  'My name is ' . $man->getName() . " age " . $man->getAge()  . 'yeas old';
 
 
