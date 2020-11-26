@@ -21,7 +21,7 @@ $helper = new Helper();
 $helper->sumAr[] = 22;
 $helper->sumAr[]= 45;
 
-echo $helper->getSum();
+ $helper->getSum();
 
 
 
