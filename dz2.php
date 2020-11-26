@@ -18,5 +18,5 @@ class Rectangle
 $obj = new Rectangle;
 $obj->height=5;
 $obj->width=4;
-echo $obj->getSquare();
+echo $obj->getSquare() . '<br/>';
 echo $obj->getPerimeter();
