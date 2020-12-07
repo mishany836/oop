@@ -1,37 +1,37 @@
-<?php
-class First// создали класс First
-{
-    // тело класса
-    public  $hello = 'Paradise, hello '; //Свойство класса
-    public $str = 'world! ';
 
-   public function hello()//метод - это и есть функция созданная внутри класса
-   {
-       //echo 'Привет мир!';
-       //Переменная $this- спец переменнная внутри класса,которая имеет ссылку на текущий класса, а также класса родителя и не должны быть приватными.
-       // echo $this->str;
-       $s = $this->str;
-       $a = $this->hello;
+    <?php
 
-       echo $a . $s;
-   }
-}
-$obj = new First(); // Создали обьект First
-//var_dump($obj);
-// -> оператор доступа к свойствам и методам класса
- $obj->hello = 'Привет ';
- $obj->str = 'мир!';
-$obj->hello();
+    require_once 'Control.php';
+    require_once 'Input.php';
+    require_once 'Button.php';
+    require_once 'Text.php';
+    require_once 'Select.php';
+    require_once 'Label.php';
+    require_once  'Radio.php';
+    require_once 'Checkbox.php';
+
+    /**
+     * Формирует тег <input> на основе данных обьекта
+     * @param $object
+     * @return string
+     */
 
 
 
+    $control = new Control();
 
 
 
-
-
-
-
+    $object = new Button('pink',100,30,'submit','Отправить','true');
+    echo $object->convertToHTML();
+    $text = new Text('',100,30,$text,'','Введите текст');
+    echo $text->convertToHTML();
+    $select = new Select('',120,20,'sel',[1,2,3]);
+    echo $select->convertToHTML();
+    $radio = new Radio('red',15,15,'',2,'true');
+    echo $radio->convertToHTML();
+    $check = new Checkbox('red',15,15,'',2,'true');
+    echo $check->convertToHTML();
 
 
 

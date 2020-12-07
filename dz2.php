@@ -15,7 +15,7 @@ class Rectangle
       return  2*($this->height + $this->width);
     }
 }
-$obj = new Rectangle;
+$obj = new Rectangle1;
 $obj->height=5;
 $obj->width=4;
 echo $obj->getSquare() . '<br/>';
