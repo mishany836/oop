@@ -19,9 +19,17 @@ class calculate
     }
     public static function divided($a, $b)
     {
+        if ($b == 0) {
 
+        return 'На ноль делить нельзя';
+    }else{
             return $a / $b;
+        }
+
+
     }
+
+
 
 }
 
