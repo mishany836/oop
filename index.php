@@ -10,6 +10,7 @@
     require_once  'Radio.php';
     require_once 'Checkbox.php';
 
+
     /**
      * Формирует тег <input> на основе данных обьекта
      * @param $object
@@ -23,16 +24,16 @@
 
 
     $object = new Button('pink',100,30,'submit','Отправить','true');
-    echo $object->convertToHTML();
+    echo $object->convertToHTML(). '<br/>';
     $text = new Text('',100,30,$text,'','Введите текст');
-    echo $text->convertToHTML();
+    echo $text->convertToHTML(). '<br/>';
     $select = new Select('',120,20,'sel',[1,2,3]);
-    echo $select->convertToHTML();
+    echo $select->convertToHTML(). '<br/>';
     $radio = new Radio('red',15,15,'',2,'true');
-    echo $radio->convertToHTML();
+    echo $radio->convertToHTML(). '<br/>';
     $check = new Checkbox('red',15,15,'',2,'true');
     echo $check->convertToHTML();
-
+    $menu = new Menu();
 
 
 

@@ -1,7 +1,7 @@
 <?php
+require_once 'PointInterface.php';
 
-
-class Circle1 extends Point
+class Circle1 extends Point implements PointInterface
 {
     private $r; //radius
     public function __construct($x, $y ,$r)
@@ -15,10 +15,10 @@ public function show()
 }
     public function area()
     {
-        return 3.14 * $this->r * $this->r;
+        return PointInterface::PI * $this->r * $this->r;
     }
     public function perimeter()
     {
-        return 2 * 3.14 * $this->r;
+        return PointInterface::PI * 2 * $this->r;
     }
 }

@@ -4,11 +4,12 @@ class User
     private $name;
     private $age; // private - Свойства и методы доступные среди класса
 
-   // function __construct($n, $a)// спец метод автоматически вызывается при создании нового обьекта
-    //{
+    function __construct()// спец метод автоматически вызывается при создании нового обьекта
+    {
+        echo  'Я нахожусь в глобальном протранстве имен APP';
     //$this->age = $a;
-    // $this->name = $n;
-   // }
+      //  $this->name = $n;
+   }
 
     /**
      * @return mixed
@@ -48,12 +49,6 @@ class User
     }
 
 }
-$man = new User('Vasya ', '18 ');
-$man->setAge(25);
-$man->setName('Петя');
-
-
-echo  'My name is ' . $man->getName() . " age " . $man->getAge()  . 'yeas old';
 
 
 

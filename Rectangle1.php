@@ -1,11 +1,11 @@
 <?php
 
 
-class Rectangle1 extends Point
-{
-private $w;//ширина
-private $h;//высота
-    public function __construct($x, $y , $w, $h)
+class Rectangle1 extends Point implements PointInterface
+    {
+    private $w;//ширина
+    private $h;//высота
+        public function __construct($x, $y , $w, $h)
     {
         parent::__construct($x, $y);
         $this->w = $w;
