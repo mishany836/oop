@@ -3,9 +3,9 @@
 
 class Menu
 {
-public $ListItems = [];
+protected $ListItems = [];
 
-public function PrintMenu($width, $height, $backgroundColor, $color )
+public function printMenu($width, $height, $backgroundColor, $color )
     {
 
         return $this->PrintMenu($width,$height,$backgroundColor,$color);

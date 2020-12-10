@@ -3,8 +3,8 @@
 
 class MenuItem
 {
-public $name = 'name';
-public $URL = 'URL';
+public $name;
+public $URL;
 public function __construct($name, $URL)
 {
     $this->name = $name;

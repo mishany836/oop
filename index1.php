@@ -1,17 +1,38 @@
 <?php
-require_once 'PointInterface.php';
-require_once 'Point.php';
-require_once 'Circle1.php';
-require_once 'Calculate.php';
-require_once 'Rectangle1.php';
-require_once 'app/User.php';
-require_once 'User.php';
+//require_once 'PointInterface.php';
+//require_once 'Point.php';
+//require_once 'Circle1.php';
+//require_once 'Calculate.php';
+//require_once 'Rectangle1.php';
+//require_once 'app/User.php';
+//require_once 'User.php';
 
 
 
-$user = new My\User();
-$user1 = new User();
 
+use  app\lib\Library;
+
+/**
+ * в параметр приходит имякласса вместе с пространством именн
+ * @param $class
+ */
+function auto_load($class) //наша функция для автозагрузки
+{
+
+    $str = str_replace('\\','/',$class);// меняем слэши в пути
+    //echo $str . '.php';
+    require_once  $str . '.php';
+}
+
+spl_autoload_register('auto_load');    //функция автозагрузки
+
+$obj = new Example();
+$obj->run();//вызываем метод trait
+
+echo $obj;
+//$user = new Circle();
+//$user1 = new User();
+/*
 $c = new Circle1(2,4,20);
 echo $c->area() . '<br/>';
 
@@ -31,3 +52,30 @@ foreach ($arItems as $item){
 }
 
 echo $total. '<br/>';
+*/
+
+//**************************************************************************************************
+//
+// полиморфизм  это способность обьекта производного класса который не сущ на моменгт создания базовых
+// trait -это механизм повторного использования кода в языках с поддержкой только одиночного наследования
+//ключевое слово TRAIT реализует горизонтальное наследование
+// могут содержатьсья обычные методы
+// могжет содержаться свойство тогда класс использующий trait не может у себя обьявить у себя обьявлять
+// свойства с таким же имеенем
+// могут содержаться статические свойства и методы
+// можно использовать указатель this и этот указатель будет относиться к тому обьекту который использует this
+//могут использоваться другие теги
+// несколько Trait ов могут быть вставленны в классс
+// путем их перечисления в дерективе use  через запятую
+
+//***************************************************************************************
+// магические методы спец классы зарезервированные в php для опр повед в конкретных ситуациях
+//все магические методы должны быть public
+
+
+
+
+
+
+
+
