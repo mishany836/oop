@@ -33,7 +33,7 @@
     echo $radio->convertToHTML(). '<br/>';
     $check = new Checkbox('red',15,15,'',2,'true');
     echo $check->convertToHTML();
-    $menu = new Menu();
+
 
 
 
