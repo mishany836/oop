@@ -7,7 +7,7 @@
     require_once 'Text.php';
     require_once 'Select.php';
     require_once 'Label.php';
-    require_once  'Radio.php';
+    require_once 'Radio.php';
     require_once 'Checkbox.php';
 
 
