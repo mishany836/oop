@@ -1,7 +1,12 @@
 <?php
 include_once 'classes\menu\Menu.php';
 include_once 'classes\menu\MenuItem.php';
+include_once 'publish\Publication.php';
+include_once 'publish\News.php';
+include_once 'publish\Articles.php';
+include_once 'publish\Announcements.php';
 
+use publish\News;
 use classes\menu\Menu;
 
 $menu = new Menu();
@@ -15,3 +20,6 @@ $menu = new Menu();
 
 
 
+$news = new \News();
+$article = new \Articles('обьявление','text', 'Пушкин');
+$announcement = new \Announcements('статья','text', 13.18);

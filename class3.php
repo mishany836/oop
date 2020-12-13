@@ -1,8 +1,8 @@
 <?php
 class Student
 {
-    //public $name;
-    //public $course;
+    //publish $name;
+    //publish $course;
     private $name;
     private $course = 1;
 /*

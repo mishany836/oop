@@ -3,18 +3,20 @@
 
 class Example
 {
-    use Hello; //Подключаем trait Hello
+    use Hello;
 
     public function show()
     {
-       return 'show';
+      return 'show';
     }
+
     public function __toString()
     {
-       return 'НЕльзя так делать';
+       return 'Нельзя так делать!';
     }
-    public function __get()
-    {
-        return 'error';
-    }
+public function __get()
+{
+  return 'error';
+}
+
 }
