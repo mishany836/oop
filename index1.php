@@ -14,10 +14,17 @@ use  app\lib\Library;
  */
 function auto_load($class) //наша функция для автозагрузки
 {
-
+    $str = $_SERVER['DOCUMENT_ROOT'] . '/';
     $str = str_replace('\\','/', $class);// меняем слэши в пути
-    //echo $str . '.php <br>';
-    require_once  $str . '.php';
+    $str .=  '.php';
+
+    if (is_file($str)){
+
+        require_once  $str;
+
+    }
+
+
 }
 
 spl_autoload_register('auto_load');    //функция автозагрузки
@@ -27,9 +34,9 @@ spl_autoload_register('auto_load');    //функция автозагрузки
 
 //echo '<br>';
 
-$obj = new Example();
-$obj->run(); // вызываем метод trait
-echo $obj;
+$lib = new Library();
+//$obj->run(); // вызываем метод trait
+//echo $obj;
 //$user = new Circle();
 //$user1 = new User();
 /*
