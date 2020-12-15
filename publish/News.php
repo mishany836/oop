@@ -16,7 +16,7 @@ public function __construct($title, $description, $date)
 {
     echo  '<h1>' .$this->title . ' </h1></br>';
     echo '<p>' .$this->description . '</p></br>';
-    echo '<span>' . $this->date . ' </span></br>';
+    echo '<span>' . "дата выхода публикации : ". $this->date . ' </span></br>';
 }
 
 }

@@ -15,7 +15,7 @@ public function show()
 {
     echo '<h1>' .$this->title . ' </h1></br>';
     echo '<p>' .$this->description . '</p></br>';
-    echo '<span>' . $this->dateEnd . ' </span></br>';
+    echo '<span>' . 'дата завершения публикации : ' . $this->dateEnd . ' </span></br>';
 }
 
 }

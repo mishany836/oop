@@ -19,7 +19,3 @@ $menu = new Menu();
  $menu->printMenu(100,30,'red','black',15);
 
 
-
-$news = new \News();
-$article = new \Articles('обьявление','text', 'Пушкин');
-$announcement = new \Announcements('статья','text', 13.18);

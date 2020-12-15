@@ -1,4 +1,5 @@
 <?php
+namespace My;
 class Country
 {
     public $arCountry = [];

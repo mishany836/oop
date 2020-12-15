@@ -14,7 +14,7 @@ public function __construct($title, $description, $nameWriter)
 public function show()
 {
     echo  '<h1>' .$this->title . '</h1></br>';
-    echo '<p>' .$this->description . '</p></br>';
-    echo '<strong>' . $this->nameWriter . '</strong></br>';
+    echo   '<p>'. $this->description . '</p></br>';
+    echo   'автор произведения : ' . $this->nameWriter .'</br>';
 }
 }

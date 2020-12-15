@@ -1,5 +1,5 @@
 <?php
-require_once'PointInterface.php';
+require_once 'PointInterface.php';
  class Point
  {
      protected $x;
