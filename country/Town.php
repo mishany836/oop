@@ -1,5 +1,5 @@
 <?php
-
+namespace country;
 
 class Town
 {

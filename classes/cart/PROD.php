@@ -17,7 +17,7 @@ $str = $_SERVER['DOCUMENT_ROOT'] . '/';
 }
 spl_autoload_register('auto_load');    //функция автозагрузки
 
-//$prod1 = new \classes\cart\Product('apple',100,1);
+$prod1 = new \classes\cart\Product('apple',100,1);
 //$prod2 = new \classes\cart\Product('peach',200,4);
 //$prod3 = new \classes\cart\Product('potato',500,5);
 
