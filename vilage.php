@@ -21,9 +21,9 @@ function auto_load($class) //наша функция для автозагруз
 }
 
 spl_autoload_register('auto_load');    //функция автозагрузки
-$town []= new Town('Витебск',974, 10000000);
-$town2 []= new Town('Могилев', 1431,7000000);
-$town3 []= new Town( 'Орша',974, 80000000);
+$town = new Town('Витебск',974, 10000000);
+$town2 = new Town('Могилев', 1431,7000000);
+$town3 = new Town( 'Орша',974, 80000000);
 
 $country = new Country ();
 $country->addTown($town);

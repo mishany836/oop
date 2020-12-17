@@ -9,7 +9,7 @@ public $listTown = [];
      * Country constructor.
      * @param array $listTown
      */
-    public function __construct(array $listTown)
+    public function __construct()
     {
         if (!empty($_SESSION['country'])){
             foreach ($_SESSION['country'] as $item){
