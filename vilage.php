@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 //session_destroy();
 use \country\Country;
 use \country\Town;

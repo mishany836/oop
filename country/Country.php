@@ -20,7 +20,7 @@ public $listTown = [];
     }
 public function addTown(Town $town)
 {
-    $this->listTown[] = $town;
+    $this->listTown[]= $town;
     $_SESSION['country'][]= serialize($town);
 }
   public function getCountryList()

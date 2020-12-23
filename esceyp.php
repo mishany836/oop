@@ -25,12 +25,14 @@ try { //Птается выполнить код
     $x = 0;
     if ($x === 0){
 
-        throw new Exception('Делить на ноль нельзя'); // Выбрасывает исключения
+       throw new MyException('Делить на ноль нельзя '); // Выбрасывает исключения прекращается выполнение блока
     }
     echo 1/$x;
 
-}catch (Exception $e){
+}catch (MyException $e){
     echo $e->getMessage();
+}finally{
+    echo 123 ;  // сработает даже если было исключение
 }
 
 
